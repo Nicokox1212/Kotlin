@@ -1,5 +1,7 @@
 package com.example.mojaaplikacjanicolaallocca
 
+import android.webkit.WebStorage.Origin
+
 //fun -> function
 fun main() {
 
@@ -76,4 +78,71 @@ fun main() {
 //            else -> println("To nie jest ani truskawka ani pomidor")
 //    }
 
+    // 3. LEKCJAA //
+
+//
+//    val nullableValue : String? = null
+//    val valueString : String = nullableValue ?: "To byla nullowalna wartosc"
+//
+//    println(valueString)
+//    if (nullableValue == null){
+//        "to byla nullowalna wartosc"
+//
+//    }else {
+//        nullableValue
+//    }
+
+//    val summary = sumTwoNumbers(10, 24)
+//    val summary2 = sumTwoNumbers2(10, 24)
+//    val summary3 = sumTwoNumbers3(10, 24)
+//    println(summary)
+//    println(summary2)
+//    println(summary3)
+
+//}
+
+
+//fun addItem(list: List<String>){
+//    // Sie cos działo tutaj
+//}
+//
+//fun sumTwoNumbers(x: Int, y: Int) : Int {
+//    return x+y
+//}
+//
+//fun sumTwoNumbers2(x: Int, y: Int) : Int = x+y
+//
+//fun sumTwoNumbers3(x: Int, y: Int) = x+y
+
+
+// ZADANIE 1
+
+
+    data class Vegetable(val name: String, val age: Int, val originCountry: String)
+
+    var oldestVegetable: Vegetable? = null
+    var maxValue: Int = 0
+
+    val xd = Vegetable("Tomato", 10, "Spain")
+    val xd2 = Vegetable("Cabbage", 3, "Japan")
+    val xd3 = Vegetable("Cucumber", 11, "Great Britain")
+
+    val mutableList = mutableListOf(xd, xd2, xd3)
+
+
+    for (vegetable in mutableList) {
+        if (vegetable.age > maxValue) {
+            maxValue = vegetable.age
+            oldestVegetable = vegetable
+        }
+    }
+
+    if (oldestVegetable != null) {
+        println("Najstarsze warzywo to: ${oldestVegetable.name}, jego wiek to: ${oldestVegetable.age}")
+    }
+
+
+    for (vegetable in mutableList) {
+        println("${vegetable.name} pochodzi z ${vegetable.originCountry}")
+    }
 }
