@@ -118,31 +118,36 @@ fun main() {
 // ZADANIE 1
 
 
-    data class Vegetable(val name: String, val age: Int, val originCountry: String)
+//    data class Vegetable(val name: String, val age: Int, val originCountry: String)
+//
+//    var oldestVegetable: Vegetable? = null
+//    var maxValue: Int = 0
+//
+//    val xd = Vegetable("Tomato", 10, "Spain")
+//    val xd2 = Vegetable("Cabbage", 3, "Japan")
+//    val xd3 = Vegetable("Cucumber", 11, "Great Britain")
+//
+//    val mutableList = mutableListOf(xd, xd2, xd3)
+//
+//
+//    for (vegetable in mutableList) {
+//        if (vegetable.age > maxValue) {
+//            maxValue = vegetable.age
+//            oldestVegetable = vegetable
+//        }
+//    }
+//
+//    if (oldestVegetable != null) {
+//        println("Najstarsze warzywo to: ${oldestVegetable.name}, jego wiek to: ${oldestVegetable.age}")
+//    }
+//
+//
+//    for (vegetable in mutableList) {
+//        println("${vegetable.name} pochodzi z ${vegetable.originCountry}")
+//    }
 
-    var oldestVegetable: Vegetable? = null
-    var maxValue: Int = 0
-
-    val xd = Vegetable("Tomato", 10, "Spain")
-    val xd2 = Vegetable("Cabbage", 3, "Japan")
-    val xd3 = Vegetable("Cucumber", 11, "Great Britain")
-
-    val mutableList = mutableListOf(xd, xd2, xd3)
 
 
-    for (vegetable in mutableList) {
-        if (vegetable.age > maxValue) {
-            maxValue = vegetable.age
-            oldestVegetable = vegetable
-        }
-    }
-
-    if (oldestVegetable != null) {
-        println("Najstarsze warzywo to: ${oldestVegetable.name}, jego wiek to: ${oldestVegetable.age}")
-    }
 
 
-    for (vegetable in mutableList) {
-        println("${vegetable.name} pochodzi z ${vegetable.originCountry}")
-    }
 }
